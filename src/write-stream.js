@@ -94,6 +94,7 @@ export default class WriteStream {
     this.doc = root.ownerDocument;
     this.win = this.doc.defaultView || this.doc.parentWindow;
     this.parser = new HtmlParser('', {autoFix: options.autoFix});
+    console.log("WriteStream");
 
     // Actual elements by id.
     this.actuals = [root];
